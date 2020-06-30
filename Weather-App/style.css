@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/cold.jpg);
+}
+
+.app-container {
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+    to left,
+    rgb(0, 0, 0, 0.2),
+    rgb(0, 0, 0, 0.5)
+  );
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
+}
+
+.search {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  border-radius: 10px 0px 10px 0px;
+  background-color: rgb(218, 216, 216);
+  box-shadow: 0px 10px 5px rgb(0.3);
+  border-bottom: 4px solid rgb(135, 135, 235);
+  transition: 0.2s all ease-in;
+}
+.search:focus {
+  background-color: white;
+}
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.location {
+  padding: 10px 10px;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 4px black;
+
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+}
+
+.date {
+  padding: 10px 10px;
+  font-size: 20px;
+  color: rgb(238, 238, 238);
+  font-family: sans-serif;
+}
+
+.temp-border {
+  background-color: rgb(255, 255, 255, 0.3);
+  box-shadow: 4px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.temperature {
+  padding: 5px 5px;
+  font-size: 80px;
+  font-weight: 850;
+  width: 20%;
+  color: white;
+  text-shadow: 2px 4px black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.current-weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.weather {
+  font-size: 50px;
+  text-shadow: 2px 4px black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
